@@ -1,13 +1,14 @@
-import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-import Copy from './copy'
+import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import heroImg from "./assets/hero.png";
+import "./App.css";
+import Copy from "./copy";
+import CommentPage from "./comment";
 
 function Home() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -117,7 +118,7 @@ function Home() {
       <div className="ticks"></div>
       <section id="spacer"></section>
     </>
-  )
+  );
 }
 
 function App() {
@@ -125,10 +126,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/edit" element={<Copy />} />
+        <Route path="/comment" element={<CommentPage />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
