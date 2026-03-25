@@ -45,7 +45,7 @@ export default function Copy() {
   const sentence = params.sentence || 'No sentence provided'
   const bold_title = unicodeFancyTransform(title)
 
-  const link = "@ankitkumar404172"
+  const link = "@watchspot"
 
   const message = `${unicodeFancyTransform('Movie : ')}${bold_title}\n${sentence}\nJoin our community for movie lovers : ${link}`
 
