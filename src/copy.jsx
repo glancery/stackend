@@ -70,7 +70,7 @@ export default function Copy() {
         document.body.removeChild(textarea)
       }
       // redirect to google.com after successful copy
-      window.location.href = 'https://www.substack.com'
+      window.location.href = 'https://open.substack.com/home'
     } catch (err) {
       console.error('Copy failed', err)
       setCopying(false)
