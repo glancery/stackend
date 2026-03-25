@@ -47,7 +47,7 @@ export default function Copy() {
 
   const link = "@watchspot"
 
-  const message = `${unicodeFancyTransform('Movie : ')}${bold_title}\n${sentence}\nJoin our community for movie lovers : ${link}`
+  const message = `${unicodeFancyTransform('Movie : ')}${bold_title}\n${sentence}`
 
   const [copying, setCopying] = useState(false)
 
